@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% if user.is_authenticated %}
+            <h1><i class="fa-sharp fa-solid fa-clipboard"></i></i> {{user}}'s todo list</h1>
+            <p> <a href="{% url 'logout' %}">Logout <i class="fa-sharp fa-solid fa-arrow-right-from-bracket"></i></a></p>
+            <hr>
+            {% if task|length == 0 %}
+                <p>No tasks please add one <a href="{% url 'create' %}"><i class="fa-sharp fa-solid fa-plus"></i></a></p>
+            {% else %}
+                <table class="tablecenter">
+                    <tr>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Date Created</th>
+                        <th>Due Date</th>
+                        <th>Finished?</th>
+                        <th>Update</th>
+                        <th>Add</th>
+                    </tr>
+                    <tbody>
+                        {% for todo in task %}
+                        <tr>
+                            <td>{{ todo.title }}</td>
+                            <td>{{ todo.description }}</td>
+                            <td>{{ todo.created_at }}</td>
+                            <td>{{ todo.due_date }}</td>
+                            <td><a href="{% url 'delete' todo.id %}"><i class="fa-solid fa-check"></i></a></td>
+                            <td><a href="{% url 'update' todo.id %}"><i class="fa-sharp fa-solid fa-pen-to-square"></i></td>
+                        {% endfor %}
+                            <td><a href="{% url 'create' %}"><i class="fa-sharp fa-solid fa-plus"></i></a></td>
+                        </tr>
+                    </tbody>
+            </table>
+            {% endif %}
+    {% endif %}
+{% endblock content %}

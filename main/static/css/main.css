@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url("https://img.freepik.com/free-photo/cosmic-background-with-colorful-orange-blue-laser-lights-perfect-digital-wallpaper_181624-21283.jpg?w=2000");
+}
+
+
+.app {
+    color: white;
+    background-color: rgb(165, 161, 161);
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 15px 40px -20px black;
+}
+
+
+.app h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+
+.app p {
+    text-align: center;
+    font-size: 25px;
+}
+
+
+table {
+    border-collapse: separate;
+    border-spacing: 0 20px;
+    margin-top: 20px;
+  }
+
+
+  th {
+
+    color: white;
+  }
+
+
+  th,
+  td {
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+  }
+
+
+  .tablecenter {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+ .btn {
+    margin-left: 200px;
+ }
+
+
+ a {
+    font-size: 27px;
+    color: white;
+    text-decoration: none;
+ }
