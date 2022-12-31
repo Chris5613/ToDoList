@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'JetBrains Mono', monospace;
 }
 
 
@@ -27,6 +27,7 @@ body {
 .app h1 {
     text-align: center;
     font-size: 40px;
+
 }
 
 
@@ -72,4 +73,9 @@ table {
     font-size: 27px;
     color: white;
     text-decoration: none;
+ }
+
+ .create-form {
+  max-width: 600px;
+  padding: 2em;
  }
