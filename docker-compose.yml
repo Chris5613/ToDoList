@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+   main:
+      build:
+         context: ./main_microservice
+         dockerfile: Dockerfile
+      ports:
+         - 8000:8000
+      volumes:
+         - ./main_microservice:/app
+      container_name: main
