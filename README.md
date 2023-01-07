@@ -16,7 +16,7 @@ Simple web application todolist using django
 [![My Skills](https://skills.thijs.gg/icons?i=html,css)](https://skills.thijs.gg)
 
 ### Back End
-[![My Skills](https://skills.thijs.gg/icons?i=python,django)](https://skills.thijs.gg)
+[![My Skills](https://skills.thijs.gg/icons?i=python,django,postgres)](https://skills.thijs.gg)
 
 ### Virtualization 
 [![My Skills](https://skills.thijs.gg/icons?i=docker)](https://skills.thijs.gg)
