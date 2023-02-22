@@ -39,4 +39,4 @@ To run this project, cd in to your project and run docker commands:
 
 
 ## Project Status
-Project is: _in progress_ 
+Project is: Done
